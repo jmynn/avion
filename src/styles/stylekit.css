@@ -1,0 +1,20 @@
+:root {
+    --primary-dark: rgb(42, 37, 75);
+    --primary: rgb(78, 77, 147);
+    --border-dark: rgb(202, 198, 218);
+    --border-gray: rgb(235, 232, 244);
+    --light-gray: rgb(249, 249, 249);
+    --white: rgb(255, 255, 255);
+
+    --line-height: 150%;
+    --headline-1: 36px;
+    --headline-2: 32px;
+    --headline-3: 24px;
+    --headline-4: 20px;
+    --headline-5: 16px;
+    --headline-6: 14px;
+
+    --text-large: 18px;
+    --text-medium: 16px;
+    --text-small: 14px;
+}
