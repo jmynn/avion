@@ -7,10 +7,11 @@ body {
   display: flex;
   justify-content: center;  
   position: relative;
+  background-color: var(--white);
 }
 #content {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: inherit;
 }

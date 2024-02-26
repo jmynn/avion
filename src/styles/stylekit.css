@@ -1,20 +1,53 @@
 :root {
-    --primary-dark: rgb(42, 37, 75);
-    --primary: rgb(78, 77, 147);
-    --border-dark: rgb(202, 198, 218);
-    --border-gray: rgb(235, 232, 244);
-    --light-gray: rgb(249, 249, 249);
-    --white: rgb(255, 255, 255);
+	--primary-dark: rgb(42, 37, 75);
+	--primary: rgb(78, 77, 147);
+	--border-dark: rgb(202, 198, 218);
+	--border-gray: rgb(235, 232, 244);
+	--light-gray: rgb(249, 249, 249);
+	--white: rgb(255, 255, 255);
+	--logo: rgb(34, 32, 46);
+	--nav-link: rgb(114, 110, 141);
 
-    --line-height: 150%;
-    --headline-1: 36px;
-    --headline-2: 32px;
-    --headline-3: 24px;
-    --headline-4: 20px;
-    --headline-5: 16px;
-    --headline-6: 14px;
+	--line-height: 150%;
+	--headline-1: 36px;
+	--headline-2: 32px;
+	--headline-3: 24px;
+	--headline-4: 20px;
+	--headline-5: 16px;
+	--headline-6: 14px;
 
-    --text-large: 18px;
-    --text-medium: 16px;
-    --text-small: 14px;
+	--text-large: 18px;
+	--text-medium: 16px;
+	--text-small: 14px;
+
+	--container: 88.68vw;
+	--container-mobile: 87.69vw;
+
+	--ff-clash-display: 'ClashDisplay', sans-serif;
+	--transition: all ease-in-out 0.3s;
 }
+
+@font-face {
+	font-family: 'ClashDisplay';
+	src: local('ClashDisplay'),
+		url('../fonts/ClashDisplay/Fonts/WEB/fonts/ClashDisplay-Regular.woff')
+			format('woff'),
+		url('../fonts/ClashDisplay/Fonts/WEB/fonts/ClashDisplay-Regular.woff2')
+			format('woff2'),
+		url('../fonts/ClashDisplay/Fonts/WEB/fonts/ClashDisplay-Regular.ttf')
+			format('truetype');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'ClashDisplay';
+	src: local('ClashDisplay'),
+		url('../fonts/ClashDisplay/Fonts/WEB/fonts/ClashDisplay-Medium.woff')
+			format('woff'),
+		url('../fonts/ClashDisplay/Fonts/WEB/fonts/ClashDisplay-Medium.woff2')
+			format('woff2'),
+		url('../fonts/ClashDisplay/Fonts/WEB/fonts/ClashDisplay-Medium.ttf')
+			format('truetype');
+	font-weight: 500;
+}
+
+/* src/components/ui  */

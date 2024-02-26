@@ -1,0 +1,8 @@
+.logo {
+    font-family: var(--ff-clash-display);
+    font-weight: 400;
+    font-size: var(--headline-3);
+    line-height: var(--line-height);
+    color: var(--logo);
+    user-select: none;
+}

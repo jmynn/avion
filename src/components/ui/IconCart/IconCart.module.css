@@ -1,0 +1,10 @@
+.cart {
+    transition: var(--transition);   
+}
+@media screen and (hover: hover) {
+    .cart:hover {
+        transition: var(--transition);   
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
