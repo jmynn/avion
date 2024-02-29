@@ -1,0 +1,47 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.image {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+.info {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.title {
+    font-size: var(--headline-4);
+	line-height: var(--line-height);
+	font-weight: 400;
+	font-family: var(--ff-clash-display);
+	color: var(--primary-dark);
+}
+.cost {
+    font-size: var(--text-large);
+	line-height: var(--line-height);
+	font-weight: 400;
+	color: var(--primary-dark);
+}
+.addToCart {
+    width: 100%;
+    padding: 5px 0;
+    background-color: var(--light-gray);
+    border: 1px solid var(--border-gray);
+    color: var(--primary-dark);
+    font-size: var(--text-large);
+	line-height: var(--line-height);
+	font-weight: 400;
+    transition: var(--transition);
+}
+
+@media screen and (hover: hover) {
+    .addToCart:hover {
+        transition: var(--transition);
+        opacity: 0.7;
+    }
+}

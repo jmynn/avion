@@ -1,4 +1,5 @@
 .cart {
+    display: block;
     transition: var(--transition);   
 }
 @media screen and (hover: hover) {

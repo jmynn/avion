@@ -5,13 +5,13 @@ import styles from './Navbar.module.css'
 const Navbar = ():ReactNode => {
   return(
     <nav className={styles.navbar}>
-      <NextLink href={'/plant-pots'}>Plant pots</NextLink>
-      <NextLink href={'/ceramics'}>Ceramics</NextLink>
-      <NextLink href={'/tables'}>Tables</NextLink>
-      <NextLink href={'/chairs'}>Chairs</NextLink>
-      <NextLink href={'/crockery'}>Crockery</NextLink>
-      <NextLink href={'/tableware'}>Tableware</NextLink>
-      <NextLink href={'/cutlery'}>Cutlery</NextLink>
+      <NextLink href={'/'}>Plant pots</NextLink>
+      <NextLink href={'/'}>Ceramics</NextLink>
+      <NextLink href={'/'}>Tables</NextLink>
+      <NextLink href={'/'}>Chairs</NextLink>
+      <NextLink href={'/'}>Crockery</NextLink>
+      <NextLink href={'/'}>Tableware</NextLink>
+      <NextLink href={'/'}>Cutlery</NextLink>
     </nav>
   )
 }

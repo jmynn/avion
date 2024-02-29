@@ -1,0 +1,82 @@
+.club {
+	background-image: url('/assets/club/club.webp');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+}
+.row {
+	width: var(--container-mobile);
+	display: flex;
+	flex-direction: column;
+	padding: 95px 0 85px;
+	color: var(--white);
+}
+.title {
+	margin: 0 0 12px 0;
+	font-size: var(--headline-2);
+	line-height: var(--line-height);
+	font-weight: 400;
+	font-family: var(--ff-clash-display);
+}
+.subtitle {
+	font-size: var(--text-large);
+	line-height: var(--line-height);
+	font-weight: 400;
+	white-space: pre-line;
+}
+
+.benefits {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	margin: 0 0 40px 0;
+}
+.benefit {
+	font-size: var(--text-medium);
+	line-height: var(--line-height);
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+}
+.benefit::before {
+	content: '';
+	width: 16px;
+	height: 16px;
+	background-image: url('/assets/icons/checkmark-w.svg');
+	background-position: center center;
+	background-size: contain;
+	margin: 0 8px 0 0;
+}
+
+.row > form {
+	width: 100%;
+}
+
+.row > form > input {
+	background-color: var(--white);
+	color: var(--primary-dark);
+}
+.row > form > input::placeholder {
+	color: var(--border-gray);
+}
+
+.row > form > button {
+	background-color: var(--primary-dark);
+	color: var(--white);
+}
+
+@media screen and (min-width: 1024px) {
+	.row {
+		width: fit-content;
+		align-items: center;
+	}
+	.benefits {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+	.subtitle {
+		margin: 0 0 30px 0;
+	}
+}

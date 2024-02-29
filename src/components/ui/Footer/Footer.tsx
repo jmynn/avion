@@ -4,6 +4,7 @@ import Image from 'next/image';
 import NextLink from 'next/link';
 import { ReactNode } from 'react';
 import styles from './Footer.module.css';
+import FormFeedback from '../FormFeedback/FormFeedback';
 const MediaQuery = dynamic(() => import('react-responsive'), { ssr: false });
 
 const Footer = (): ReactNode => {
@@ -15,26 +16,26 @@ const Footer = (): ReactNode => {
 						<h5 className={styles.title}>Categories</h5>
 						<ul className={styles.routes}>
 							<li className={styles.route}>
-								<NextLink href={'/crockery'}>Crockery</NextLink>
+								<NextLink href={'/'}>Crockery</NextLink>
 							</li>
 							<li className={styles.route}>
-								<NextLink href={'/furniture'}>
+								<NextLink href={'/'}>
 									Furniture
 								</NextLink>
 							</li>
 							<li className={styles.route}>
-								<NextLink href={'/homeware'}>Homeware</NextLink>
+								<NextLink href={'/'}>Homeware</NextLink>
 							</li>
 							<li className={styles.route}>
-								<NextLink href={'/plant-pots'}>
+								<NextLink href={'/'}>
 									Plant pots
 								</NextLink>
 							</li>
 							<li className={styles.route}>
-								<NextLink href={'/chairs'}>Chairs</NextLink>
+								<NextLink href={'/'}>Chairs</NextLink>
 							</li>
 							<li className={styles.route}>
-								<NextLink href={'/crockery'}>Crockery</NextLink>
+								<NextLink href={'/'}>Something</NextLink>
 							</li>
 						</ul>
 					</div>
@@ -42,27 +43,27 @@ const Footer = (): ReactNode => {
 						<h5 className={styles.title}>Menu</h5>
 						<ul className={styles.routes}>
 							<li className={styles.route}>
-								<NextLink href={'/new-arrivals'}>
+								<NextLink href={'/'}>
 									New arrivals
 								</NextLink>
 							</li>
 							<li className={styles.route}>
-								<NextLink href={'/best-sellers'}>
+								<NextLink href={'/'}>
 									Best sellers
 								</NextLink>
 							</li>
 							<li className={styles.route}>
-								<NextLink href={'/recently-viewed'}>
+								<NextLink href={'/'}>
 									Recently viewed
 								</NextLink>
 							</li>
 							<li className={styles.route}>
-								<NextLink href={'/popular-this-week'}>
+								<NextLink href={'/'}>
 									Popular this week
 								</NextLink>
 							</li>
 							<li className={styles.route}>
-								<NextLink href={'/products'}>
+								<NextLink href={'/'}>
 									All products
 								</NextLink>
 							</li>
@@ -72,23 +73,23 @@ const Footer = (): ReactNode => {
 						<h5 className={styles.title}>Our company</h5>
 						<ul className={styles.routes}>
 							<li className={styles.route}>
-								<NextLink href={'/about'}>About us</NextLink>
+								<NextLink href={'/'}>About us</NextLink>
 							</li>
 							<li className={styles.route}>
-								<NextLink href={'/vacancies'}>
+								<NextLink href={'/'}>
 									Vacancies
 								</NextLink>
 							</li>
 							<li className={styles.route}>
-								<NextLink href={'/contact-us'}>
+								<NextLink href={'/'}>
 									Contact us
 								</NextLink>
 							</li>
 							<li className={styles.route}>
-								<NextLink href={'/privacy'}>Privacy</NextLink>
+								<NextLink href={'/'}>Privacy</NextLink>
 							</li>
 							<li className={styles.route}>
-								<NextLink href={'/returns-policy'}>
+								<NextLink href={'/'}>
 									Returns policy
 								</NextLink>
 							</li>
@@ -97,16 +98,7 @@ const Footer = (): ReactNode => {
 				</div>
 				<div className={styles.column}>
 					<h5 className={styles.title}>Join our mailing list</h5>
-					<form
-						action='#'
-						className={styles.feedback}>
-						<input
-							type='email'
-							placeholder='your@email.com'
-							required
-						/>
-						<button type='submit'>Sign up</button>
-					</form>
+					<FormFeedback />
 				</div>
 				<div className={styles.column}>
 					<div className={styles.copyright}>

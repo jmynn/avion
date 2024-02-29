@@ -1,0 +1,31 @@
+.feedback {
+	display: flex;
+	align-items: center;
+	width: inherit;
+}
+.feedback > button {
+	flex: 0 0 118px;
+	background-color: var(--white);
+	color: var(--primary-dark);
+	font-size: var(--text-medium);
+	font-weight: 400;
+	padding: 16px 32px;
+	transition: var(--transition);
+}
+.feedback > input {
+	flex: 1 1 auto;
+	padding: 16px 27px;
+	font-size: var(--text-medium);
+	background-color: rgba(255, 255, 255, 0.15);
+	color: var(--white);
+}
+.feedback > input::placeholder {
+	color: var(--white);
+}
+
+@media screen and (hover: hover) {
+	.feedback > button:hover {
+		transition: var(--transition);
+		opacity: 0.7;
+    }
+}

@@ -1,20 +1,23 @@
-import { serverResponse } from '@/types';
-import dbRequest from '../../../../database';
+import { GetResponseProduct } from '@/types';
 import { NextResponse } from 'next/server';
+import dbRequest from '../../../../database';
+import { product as Product } from '@prisma/client';
 
 const fieldCount = 4;
-type getResponse = { data: unknown } & serverResponse
 
-export async function GET(req: Request): Promise<NextResponse<getResponse>> {
+export async function GET(req: Request): Promise<NextResponse<GetResponseProduct>> {
     const { searchParams } = new URL(req.url);
     const page = parseInt(searchParams.get('page') ?? '0');
-    let data = null
 
-    if (!page) data = await dbRequest(async prisma => await prisma.product.findMany())
-    else data = await dbRequest(async prisma => await prisma.product.findMany({
+    if (!page) {
+        const count = await dbRequest(async prisma => await prisma.product.count()) as number
+        return NextResponse.json({ count: count / fieldCount - 1, message: 'OK' })
+    }
+    const data = await dbRequest(async prisma => await prisma.product.findMany({
         take: fieldCount,
-        skip: fieldCount * page
-    }))
+        skip: (page - 1) * fieldCount
+    })) as Product[]
 
     return NextResponse.json({ data, message: 'OK' });
 }
+

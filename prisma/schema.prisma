@@ -7,9 +7,9 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Product {
-  id String @id @default(uuid()) @map("_id") @db.ObjectId
-  title String 
-  cost Int
-  picture String?
+model product {
+  id      String @id @default(auto()) @map("_id") @db.ObjectId
+  cost    Float
+  picture String
+  title   String
 }

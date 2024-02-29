@@ -1,0 +1,56 @@
+.brand {
+	margin: 0 0 74px 0;
+}
+
+.row {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.cards {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.card {
+	padding: 36px 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	background-color: var(--light-gray);
+}
+
+.card > .title,
+.title {
+	font-size: var(--headline-4);
+	line-height: var(--line-height);
+	font-weight: 400;
+	font-family: var(--ff-clash-display);
+	color: var(--primary-dark);
+}
+
+.text {
+	font-size: var(--text-medium);
+	color: var(--primary-dark);
+	line-height: var(--line-height);
+	font-weight: 400;
+}
+.title {
+	white-space: pre-line;
+}
+
+@media screen and (min-width: 1024px) {
+    .brand {
+        padding: 50px 0 0 0;
+    }
+    .cards {
+        flex-direction: row;
+    }
+	h2.title {
+		text-align: center;
+		white-space: normal;
+		font-size: var(--headline-3);
+	}
+}

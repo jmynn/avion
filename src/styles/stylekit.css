@@ -37,6 +37,7 @@
 		url('../fonts/ClashDisplay/Fonts/WEB/fonts/ClashDisplay-Regular.ttf')
 			format('truetype');
 	font-weight: 400;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'ClashDisplay';
@@ -48,6 +49,7 @@
 		url('../fonts/ClashDisplay/Fonts/WEB/fonts/ClashDisplay-Medium.ttf')
 			format('truetype');
 	font-weight: 500;
+	font-display: swap;
 }
 
 /* src/components/ui  */

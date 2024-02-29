@@ -1,0 +1,47 @@
+.product {
+    padding: 0 0 60px;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 13px;
+}
+
+.cards > *:not(.error) {
+    flex: 0 0 calc(50% - 13px);
+}
+
+.column:has(.getProduct) {
+    display: flex;
+    justify-content: center; 
+}
+
+.getProduct {
+    padding: 16px 32px;
+    font-size: var(--text-medium);
+	line-height: var(--line-height);
+	font-weight: 400;
+    color: var(--primary-dark);
+    transition: var(--transition);
+}
+
+@media screen and (hover: hover) {
+    .getProduct:hover {
+        transition: var(--transition);
+        opacity: 0.7;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cards {
+        gap: 20px;
+    }
+    .cards > *:not(.error) {
+        flex: 0 0 calc(25% - 15px);
+    }
+}

@@ -1,7 +1,9 @@
 import Footer from '@/components/ui/Footer/Footer';
 import Header from '@/components/ui/Header/Header';
 import Wrapper from '@/components/ui/Wrapper/Wrapper';
+import CartProvider from '@/providers/CartProvider';
 import type { Metadata } from 'next';
+import { ReactNode } from 'react';
 import '../styles/globals.css';
 import '../styles/nullstyle.css';
 
@@ -13,17 +15,22 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
 	children,
+	cart
 }: Readonly<{
-	children: React.ReactNode;
+	children: ReactNode,
+	cart: ReactNode
 }>) {
 	return (
 		<html lang='en'>
 			<body>
-				<Wrapper>
-					<Header />
-					<div id='content'>{children}</div>
-					<Footer />
-				</Wrapper>
+				<CartProvider>
+					<Wrapper>
+						{cart}
+						<Header />
+						<div id='content'>{children}</div>
+						<Footer />
+					</Wrapper>
+				</CartProvider>
 			</body>
 		</html>
 	);
