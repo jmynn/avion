@@ -1,8 +1,19 @@
 .cart {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 20vw;
-    height: 100dvh;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+.title {
+    font-size: var(--headline-2);
+    color: var(--primary-dark);
+    line-height: var(--line-height);
+    font-weight: 400;
+}
+.items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }

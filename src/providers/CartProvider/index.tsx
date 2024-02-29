@@ -1,11 +1,11 @@
 'use client';
 import type { product as Product } from '@prisma/client';
 import {
-    ReactNode,
-    createContext,
-    useCallback,
-    useMemo,
-    useState,
+	ReactNode,
+	createContext,
+	useCallback,
+	useMemo,
+	useState
 } from 'react';
 
 type Cart<P = Product> = {
@@ -67,6 +67,7 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
 				});
 				return true;
 			}
+			return false
 		},
 		[cart]
 	);
